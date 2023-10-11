@@ -1,0 +1,38 @@
+.hero{
+  background-size: cover;
+}
+
+.header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  *>{
+    max-width: 100%;
+    padding: 0 64px ;
+  }
+  h1{
+    color: var(--primary-color);
+    span{
+      color: var(--secondary-color);
+    }
+  }
+  h4{
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  img{
+    height: auto;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.tree{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0;
+}
