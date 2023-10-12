@@ -9,7 +9,7 @@ const projects = [
 		name: "Fakturio",
 		description: "Allegro invoice manager.",
 		image: "fakturio.png",
-		link: "https://github.com/alekszych",
+		link: "https://github.com/alekszych/fakturio",
 		roles: "Frontend developer",
 		technologies: "Next.js, electron.js"
 	},
