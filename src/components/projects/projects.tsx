@@ -7,7 +7,7 @@ import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 const projects = [
 	{
 		name: "Obrazy z mchu",
-		description: "Online store with moss art",
+		description: "Online store with moss art.",
 		image: "obrazy-z-mchu.png",
 		link: "https://obrazyzmchu.pl",
 		roles: "UI/UX Designer, Wordpress Developer",
@@ -15,12 +15,29 @@ const projects = [
 	},
 	{
 		name: "NTree",
-		description: "A randomly generated 3D model of a tree.",
+		description: "Generator of unique models of trees.",
 		image: "nTree.png",
 		link: "https://alekszych.github.io/nTree/",
 		roles: "Frontend Developer",
 		technologies: "React, three.js"
-	}
+	},
+	{
+		name: "Kosmetologia",
+		description: "Portfolio website for a beauty studio.",
+		image: "kosmetologia.png",
+		link: "https://kosmetologia.net",
+		roles: "Wordpress developer, UI Designer, Team leader",
+		technologies: "Wordpress"
+	},
+	{
+		name: "GreeMusic",
+		description: "Personal website for a singer.",
+		image: "gree.png",
+		link: "https://greemusic.pl/",
+		roles: "Wordpress developer",
+		technologies: "Wordpress"
+	},
+
 ]
 
 const Projects = () => {
