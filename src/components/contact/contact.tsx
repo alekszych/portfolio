@@ -16,8 +16,8 @@ const Contact = () => {
 			<Button onClick={() => window.location.href = "mailto:aleks.zych@icloud.com"}>
 				<div className={"textContainer"}>
 					<p> LinkedIn: Aleks Zych</p>
-					{width <= 400 && <i> <PiPottedPlant/> </i>}
 					<div>
+						{width <= 400 && <i> <PiPottedPlant/> </i>}
 						<h2> Aleks Zych </h2>
 						<h4> Junior react developer </h4>
 					</div>

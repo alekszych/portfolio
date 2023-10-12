@@ -11,7 +11,7 @@ const Motto = () => {
 				<h5>Always grow, get better at the things that I love, and expand my knowledge.</h5>
 			</div>
 			<Button onClick={() => window.location.hash = "#projects"}>
-				<FaAngleDown/>
+				<h4> <FaAngleDown/> </h4>
 			</Button>
 		</section>
 	)

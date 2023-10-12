@@ -2,7 +2,7 @@
 
 .motto{
   display: flex;
-  padding: 48px 64px 64px 64px;
+  padding: 48px 64px;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
@@ -13,12 +13,22 @@
     width: 80px;
     height: 80px;
     font-size: 32px;
+    *{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
     @media (max-width: 500px) {
-      width: 160px;
+      width: auto;
+      height: auto;
+      gap: 16px;
+      padding: 16px;
+      flex-direction: column;
+      box-sizing: border-box;
     }
   }
   @media (max-width: 500px) {
-    padding: 48px 32px 64px 32px;
+    padding: 40px 32px;
     flex-direction: column;
     text-align: center;
   }
