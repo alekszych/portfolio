@@ -27,7 +27,8 @@ export const generateScene = (container, group, width, height) => {
 		scene.add( directionalLight )
 	})
 	//renderer
-	const renderer = new WebGL1Renderer({alpha: true})
+	const renderer = new WebGL1Renderer({alpha: true, antialias: true})
+	renderer.setPixelRatio( window.devicePixelRatio )
 	renderer.setSize( width, height )
 	container.current.innerHTML = ""
 	container.current.appendChild( renderer.domElement )
