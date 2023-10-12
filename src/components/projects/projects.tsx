@@ -6,6 +6,14 @@ import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 
 const projects = [
 	{
+		name: "Fakturio",
+		description: "Allegro invoice manager.",
+		image: "fakturio.png",
+		link: "https://github.com/alekszych",
+		roles: "Frontend developer",
+		technologies: "Next.js, electron.js"
+	},
+	{
 		name: "Obrazy z mchu",
 		description: "Online store with moss art.",
 		image: "obrazy-z-mchu.png",
@@ -37,7 +45,6 @@ const projects = [
 		roles: "Wordpress developer",
 		technologies: "Wordpress"
 	},
-
 ]
 
 const Projects = () => {
