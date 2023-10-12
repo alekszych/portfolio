@@ -8,6 +8,12 @@
   src: local('Figtree'), url(./fonts/Figtree.ttf) format('truetype')
 }
 
+html{
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 :root {
   --primary-color: #27AAF3;
   --secondary-color: #455AE4;
@@ -20,6 +26,7 @@
 }
 
 body {
+  max-width: 100vw;
   background: white;
   margin: 0;
   font-weight: normal;

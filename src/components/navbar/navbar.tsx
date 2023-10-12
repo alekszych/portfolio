@@ -6,20 +6,20 @@ const Navbar = () => {
 	const {width} = useGetWindowSize()
 	return (
 		<nav className={"navbar"}>
-			<a><h5>Aleks Zych</h5></a>
+			<a href={"#hero"}><h5>Aleks Zych</h5></a>
 			{width > 780 ?
 				<span>
-					<a><h5>Projects</h5></a>
-					<a><h5>About</h5></a>
+					<a href={"#projects"}><h5>Projects</h5></a>
+					<a href={"#about"}><h5>About</h5></a>
 				</span>
 				:
 				<>
-					<a><h5>Projects</h5></a>
-					<a><h5>About</h5></a>
+					<a href={"#projects"}><h5>Projects</h5></a>
+					<a href={"#about"}><h5>About</h5></a>
 				</>
 
 			}
-			<a><h5>Contact</h5></a>
+			<a href={"#contact"}><h5>Contact</h5></a>
 		</nav>
 	)
 }

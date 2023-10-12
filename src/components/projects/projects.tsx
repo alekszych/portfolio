@@ -10,8 +10,16 @@ const projects = [
 		description: "Online store with moss art",
 		image: "obrazy-z-mchu.png",
 		link: "https://obrazyzmchu.pl",
-		roles: "UI/UX Designer",
+		roles: "UI/UX Designer, Wordpress Developer",
 		technologies: "Wordpress"
+	},
+	{
+		name: "NTree",
+		description: "A randomly generated 3D model of a tree.",
+		image: "nTree.png",
+		link: "https://alekszych.github.io/nTree/",
+		roles: "Frontend Developer",
+		technologies: "React, three.js"
 	}
 ]
 
@@ -19,7 +27,7 @@ const Projects = () => {
 	const [index, setIndex] = useState(0)
 	const {name, description,  image, link, roles, technologies} = projects[index]
 	return (
-		<section className={"projects"}>
+		<section id={"projects"}>
 			<img alt={"Project"} src={require(`../../images/projects/${image}`)}/>
 			<div className={"project"}>
 				<header className={"projectHeader"}>
@@ -46,11 +54,11 @@ const Projects = () => {
 						<h5> {description} </h5>
 					</div>
 					<div>
-						<Button onClick={() => {setIndex(index => index % (projects.length))}}>
+						<Button onClick={() => {setIndex(index => (index + 1) % (projects.length))}}>
 							<h5> Next project </h5>
 							<h5> <FaAngleRight/> </h5>
 						</Button>
-						<Button variant={"secondary"}>
+						<Button variant={"secondary"} onClick={() => window.location.hash = "#about"}>
 							<h4> <FaAngleDown/> </h4>
 						</Button>
 					</div>

@@ -1,4 +1,4 @@
-.projects{
+#projects{
   display: flex;
   gap: 8px;
   img{
@@ -108,7 +108,9 @@
   }
   @media (max-width: 400px) {
     button{
+      gap: 16px;
       padding: 16px;
+      flex-direction: column;
     }
   }
 }

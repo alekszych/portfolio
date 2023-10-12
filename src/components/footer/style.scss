@@ -1,0 +1,17 @@
+#footer{
+  width: 100%;
+  display: flex;
+  padding: 32px 64px;
+  align-items: center;
+  background: var(--primary-color);
+  box-sizing: border-box;
+  p{
+    color: white;
+    font-weight: 600;
+  }
+  @media (max-width: 400px) {
+    padding: 32px;
+    justify-content: center;
+    text-align: center;
+  }
+}

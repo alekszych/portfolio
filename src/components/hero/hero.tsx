@@ -16,7 +16,7 @@ const Hero: FC = () => {
 		})
 	}, [])
 	return (
-		<section className={"hero"} style={{ backgroundImage: `url(${background})` }}>
+		<section id={"hero"} style={{ backgroundImage: `url(${background})` }}>
 			<Navbar/>
 			<header className={"header"}>
 				<div>
