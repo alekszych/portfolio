@@ -80,9 +80,11 @@ export const topBottomWidthData = [
 ]
 
 export const topSegmentShrinkData = [
-	{value: 0.65, probability: 1},
+	{value: 0.5, probability: 1},
+	{value: 0.55, probability: 5},
+	{value: 0.60, probability: 10},
+	{value: 0.65, probability: 5},
 	{value: 0.7, probability: 1},
-	{value: 0.85, probability: 1},
 ]
 
 export const topShrinkData = [

@@ -30,11 +30,11 @@
       color: var(--secondary-color);
       font-size: 64px;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
       padding: 32px;
     }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     gap: 32px;
     padding: 64px 32px;
   }
@@ -45,7 +45,7 @@
     align-items: flex-start;
     gap: 32px;
     width: 100%;
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
       align-items: center;
       text-align: center;
     }

@@ -5,9 +5,8 @@ const useGetWindowSize = () => {
 	const [height, setHeight] = useState(0)
 
 	const handleResize = () => {
-		const {width, height} = document.documentElement.getBoundingClientRect()
-		setWidth(width)
-		setHeight(height)
+		setWidth(window.innerWidth)
+		setHeight(window.innerHeight)
 	}
 
 	useEffect(() => {

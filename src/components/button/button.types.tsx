@@ -3,5 +3,6 @@ import {ReactNode} from "react"
 export interface ButtonTypes{
 	variant?: "primary" | "secondary",
 	children: ReactNode,
-	onClick?: () => void
+	onClick?: () => void,
+	className?: string
 }
