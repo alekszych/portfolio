@@ -1,0 +1,27 @@
+.button{
+  display: flex;
+  //padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--hard-shadow);
+  border-radius: 8px;
+  font-weight: 600;
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  &:active{
+    transform: scale(0.95)
+  }
+}
+
+.primary{
+  color: var(--white-color);
+  background: var(--secondary-color);
+}
+
+.secondary{
+  color: var(--secondary-color);
+  background: var(--accent-color);
+}

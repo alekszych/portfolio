@@ -1,4 +1,4 @@
-export interface NTreeTypes{
+export interface NtreeTypes {
 	dnaArray: string[],
 	rockAmount?: number,
 	islandSize?: number,

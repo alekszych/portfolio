@@ -28,7 +28,7 @@ export const generateIsland = (radius) => {
 	const colors = []
 	const color = new Color()
 	vertices.forEach(() => {
-		color.set( ["#727272", "#435b0a"][Math.random() > 0.7 ? 0 : 1] )
+		color.set("#42526C")
 		colors.push( color.r, color.g, color.b )
 		colors.push( color.r, color.g, color.b )
 		colors.push( color.r, color.g, color.b )

@@ -1,0 +1,35 @@
+@use "../../index";
+
+.motto{
+  display: flex;
+  padding: 48px 64px 64px 64px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background: var(--primary-color);
+  color: white;
+  border-top: 8px solid #E9E9E9;
+  border-bottom: 8px solid #E9E9E9;
+  button{
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    @media (max-width: 400px) {
+      width: 160px;
+    }
+  }
+  @media (max-width: 400px) {
+    padding: 48px 32px 64px 32px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: fit-content;
+}
+

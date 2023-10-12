@@ -2,7 +2,7 @@ import {OctahedronGeometry, Mesh, MeshPhysicalMaterial, Float32BufferAttribute} 
 import {convertVectorsToVertices, getRandomFloat, getVertices} from "../helpers/services"
 import {makeNoise3D} from "open-simplex-noise"
 export const generateRock = () => {
-	const mesh = new Mesh(new OctahedronGeometry(3,1), new MeshPhysicalMaterial({color: "#919191", flatShading: true}))
+	const mesh = new Mesh(new OctahedronGeometry(3,1), new MeshPhysicalMaterial({color: "#B1C5E0", flatShading: true}))
 	const vertices = getVertices(mesh)
 	const noise3D = makeNoise3D(Math.random() * 100)
 	vertices.forEach(verticle => {

@@ -30,7 +30,7 @@ const Hero: FC = () => {
 				</div>
 				{dna && <NTree
 					dnaArray={[dna]}
-					rockAmount={2}
+					rockAmount={7}
 					islandSize={4}
 					width={750}
 					height={448}

@@ -6,10 +6,11 @@ import {generateIsland} from "./island/generateIsland"
 import {generateScene} from "./scene/generateScene"
 import {displayRocks} from "./rock/displayRocks"
 import {displayTrees} from "./tree/displayTrees"
-import {NTreeTypes} from "./NTree.types"
+import {NtreeTypes} from "./ntree.types"
 
 
-const NTree: FC<NTreeTypes> = ({dnaArray = [], rockAmount = 3, islandSize = 5, width = 300, height = 300, className = ""}) => {
+
+const NTree: FC<NtreeTypes> = ({dnaArray = [], rockAmount = 3, islandSize = 5, width = 300, height = 300, className = ""}) => {
 	const container = useRef(null)
 
 	useEffect(() => {

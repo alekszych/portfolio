@@ -1,7 +1,7 @@
-import {NTree} from "./NTree"
+import {NTree} from "./ntree"
 
-import {NTreeTypes} from "./NTree.types"
+import {NtreeTypes} from "./ntree.types"
 
 export {NTree}
 
-export type {NTreeTypes}
+export type {NtreeTypes}

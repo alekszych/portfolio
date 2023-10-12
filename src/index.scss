@@ -14,12 +14,15 @@
   --accent-color: #46E9EA;
   --white-color: #fff;
   --black-color: #000;
+  --hard-shadow: 8px 8px 0 0 #AFE3FF;
+  --tablet-size: 768px;
+  --phone-size: 400px;
 }
 
 body {
   margin: 0;
   line-height: 120%;
-  font-family: -Figtree, -apple-system, sans-serif;
+  font-family: Figtree, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,25 +42,40 @@ h1{
   font-family: Lora, serif;
   font-size: 67px;
   font-weight: 600;
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 h2{
   font-family: Lora, serif;
   font-size: 51px;
   font-weight: 600;
+  @media (max-width: 400px) {
+    font-size: 33px;
+  }
 }
 
 h3{
   font-weight: 600;
   font-size: 38px;
+  @media (max-width: 400px) {
+    font-size: 28px;
+  }
 }
 
 h4{
   font-size: 28px;
+  @media (max-width: 400px) {
+    font-size: 24px;
+  }
 }
 
 h5{
   font-size: 21px;
+  @media (max-width: 400px) {
+    font-size: 19px;
+  }
 }
 
 p{
@@ -66,4 +84,31 @@ p{
 
 small{
   font-size: 12px;
+  @media (max-width: 400px) {
+    font-size: 13px;
+  }
+}
+
+button{
+  all: unset;
+  &:focus{
+    outline: revert;
+  }
+}
+
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 0;
+  padding: 0 64px;
+  @media (max-width: 768px){
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    padding: 0 32px;
+  }
 }
