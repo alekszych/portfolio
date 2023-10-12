@@ -13,12 +13,20 @@ const useGetWindowSize = () => {
 		if(window) {
 			handleResize()
 		}
-		window.addEventListener("resize", () => {
-			handleResize()
-		})
+
+		if(width > 768){
+			window.addEventListener("resize", () => {
+				handleResize()
+			})
+		} else {
+			window.addEventListener("orientationchange", () => {
+				handleResize()
+			})
+		}
 
 		return () => {
 			window.removeEventListener("resize", () => {})
+			window.removeEventListener("orientationchange", () => {})
 		}
 	}, [])
 	return {width, height}
