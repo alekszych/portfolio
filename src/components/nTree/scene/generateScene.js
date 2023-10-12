@@ -55,7 +55,6 @@ export const generateScene = (container, group, width, height) => {
 		}
 	}
 	animate()
-	// let image = renderer.domElement.toDataURL()
-	// console.log(image)
-	// return {image: image}
+	let image = renderer.domElement.toDataURL()
+	console.log(image)
 }

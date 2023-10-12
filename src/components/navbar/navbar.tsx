@@ -10,12 +10,12 @@ const Navbar = () => {
 			{width > 780 ?
 				<span>
 					<a><h5>Projects</h5></a>
-					<a><h5>About me</h5></a>
+					<a><h5>About</h5></a>
 				</span>
 				:
 				<>
 					<a><h5>Projects</h5></a>
-					<a><h5>About me</h5></a>
+					<a><h5>About</h5></a>
 				</>
 
 			}

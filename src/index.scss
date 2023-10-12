@@ -11,20 +11,28 @@
 :root {
   --primary-color: #27AAF3;
   --secondary-color: #455AE4;
-  --accent-color: #46E9EA;
+  --accent-color: #E4E9ED;
   --white-color: #fff;
   --black-color: #000;
-  --hard-shadow: 8px 8px 0 0 #AFE3FF;
+  --hard-shadow: 6px 6px 0 0 #ffffff;
   --tablet-size: 768px;
   --phone-size: 400px;
 }
 
 body {
+  background: white;
   margin: 0;
+  font-weight: normal;
   line-height: 120%;
   font-family: Figtree, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 code {
@@ -65,6 +73,7 @@ h3{
 }
 
 h4{
+  font-weight: normal;
   font-size: 28px;
   @media (max-width: 400px) {
     font-size: 24px;
@@ -72,6 +81,7 @@ h4{
 }
 
 h5{
+  font-weight: normal;
   font-size: 21px;
   @media (max-width: 400px) {
     font-size: 19px;
@@ -79,6 +89,7 @@ h5{
 }
 
 p{
+  font-weight: normal;
   font-size: 16px;
 }
 

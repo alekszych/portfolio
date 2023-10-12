@@ -3,9 +3,9 @@ import {ButtonTypes} from "./button.types"
 import clsx from "clsx"
 import "./style.scss"
 
-const Button: FC<ButtonTypes> = ({variant = "primary", children, ...other}) => {
+const Button: FC<ButtonTypes> = ({variant = "primary", children, onClick}) => {
 	return (
-		<button className={clsx("button", variant)} {...other}>
+		<button className={clsx("button", variant)} onClick={onClick}>
 			{children}
 		</button>
 	)

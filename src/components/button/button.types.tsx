@@ -2,5 +2,6 @@ import {ReactNode} from "react"
 
 export interface ButtonTypes{
 	variant?: "primary" | "secondary",
-	children: ReactNode
+	children: ReactNode,
+	onClick?: () => void
 }

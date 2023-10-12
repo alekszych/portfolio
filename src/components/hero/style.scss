@@ -1,7 +1,10 @@
 .hero{
   padding: 0 64px;
   background-size: cover;
-  min-height: 100vh;
+  min-height: min(100vw, 100vh);
+  @media (max-width: 400px) {
+    padding: 0 32px;
+  }
 }
 
 .header{
