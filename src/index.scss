@@ -8,7 +8,9 @@
   src: local('Figtree'), url(./fonts/Figtree.ttf) format('truetype')
 }
 
-html{
+html, body, #root{
+  width: 100% !important;
+  height: 100% !important;
   scroll-behavior: smooth;
   max-width: 100vw;
   overflow-x: hidden;
