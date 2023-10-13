@@ -8,7 +8,8 @@
   @media (max-width: 768px) {
     flex-direction: column;
     img{
-      width: auto;
+      height: max(30vh, 300px, 50vw);
+      width: 100%;
     }
   }
 }

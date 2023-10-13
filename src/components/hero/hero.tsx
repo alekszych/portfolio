@@ -6,14 +6,12 @@ import background from "../../images/background.jpg"
 import {generateDna} from "../nTree/helpers/generators"
 import {NTree} from "../nTree"
 
+
 const Hero: FC = () => {
 	const [dna, setDna] = useState<string>("")
 	const {years, months, days} = useCalculateAge("2004/10/13")
 	useEffect(() => {
 		setDna(generateDna())
-		addEventListener("resize", () => {
-			location.reload()
-		})
 	}, [])
 	return (
 		<section id={"hero"} style={{ backgroundImage: `url(${background})` }}>
