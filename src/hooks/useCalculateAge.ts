@@ -1,26 +1,60 @@
-const daysInMonth = 30.436875
-const dayInMs = 86400000
+const minInMs = 1000 * 60
+const hourInMS = minInMs * 60
+const dayInMs = hourInMS * 24
+const monthsInNormalYear = [
+	31,
+	59,
+	90,
+	120,
+	151,
+	181,
+	212,
+	243,
+	273,
+	304,
+	334,
+	365
+]
 
 const useCalculateAge = (birthDate: string) => {
-	const dob = new Date(birthDate)
+	const birth = new Date(birthDate)
 	const now = new Date()
-	const yearAad = now.getFullYear()
-	const yearDob = dob.getFullYear()
-	let years = yearAad - yearDob
-	dob.setFullYear(yearAad)
-	const aadMillis = now.getTime()
-	let dobMillis = dob.getTime()
-	if (aadMillis < dobMillis) {
-		--years
-		dob.setFullYear(yearAad - 1)
-		dobMillis = dob.getTime()
-	}
-	let days = (aadMillis - dobMillis) / dayInMs
-	const monthsDec = days / daysInMonth
-	const months = Math.floor(monthsDec)
-	days = Math.floor(daysInMonth * (monthsDec - months))
+	const birthYear = birth.getFullYear(), currentYear = now.getFullYear()
+	let ageInYears = 0, ageInMs = 0
 
-	return {years, months, days}
+	let diff = (now.getTime() - birth.getTime())
+
+	for (let year = birthYear; year < currentYear; year++){
+		ageInYears++
+		if(year % 100 === 0 ? year % 400 === 0 : year % 4 === 0){
+			ageInMs += 366 * dayInMs
+		} else {
+			ageInMs += 365 * dayInMs
+		}
+	}
+
+	const years = ageInYears
+	diff -= ageInMs
+
+	const month = monthsInNormalYear
+		.filter(month => diff > month * dayInMs)
+		.at(-1)
+	const months = month ? monthsInNormalYear.indexOf(month) + 1 : 0
+	diff -= month ? (month + 1) * dayInMs : 0
+
+	const days = Math.floor(diff / dayInMs)
+	diff -= days * dayInMs
+
+	const hours = Math.floor(diff / hourInMS)
+	diff -= hours * hourInMS
+
+	const minutes = Math.floor(diff / minInMs)
+	diff -= minutes * minInMs
+
+	const seconds = Math.floor(diff / 1000)
+	diff -= seconds * 1000
+
+	return {years, months, days, hours, minutes, seconds}
 }
 
 export {useCalculateAge}
