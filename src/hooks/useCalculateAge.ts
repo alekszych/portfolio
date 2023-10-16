@@ -1,6 +1,7 @@
 const minInMs = 1000 * 60
 const hourInMS = minInMs * 60
 const dayInMs = hourInMS * 24
+
 const monthsInNormalYear = [
 	31,
 	59,
@@ -14,6 +15,21 @@ const monthsInNormalYear = [
 	304,
 	334,
 	365
+]
+
+const monthsInLeapYear = [
+	31,
+	60,
+	91,
+	121,
+	152,
+	182,
+	213,
+	244,
+	274,
+	305,
+	335,
+	366
 ]
 
 const useCalculateAge = (birthDate: string) => {
@@ -36,7 +52,13 @@ const useCalculateAge = (birthDate: string) => {
 	const years = ageInYears
 	diff -= ageInMs
 
-	const month = monthsInNormalYear
+	let month
+	if(currentYear % 100 === 0 ? currentYear % 400 === 0 : currentYear % 4 === 0){
+		month = monthsInLeapYear
+	} else {
+		month = monthsInLeapYear
+	}
+	month = month
 		.filter(month => diff > month * dayInMs)
 		.at(-1)
 	const months = month ? monthsInNormalYear.indexOf(month) + 1 : 0
