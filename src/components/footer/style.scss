@@ -5,10 +5,12 @@
   align-items: center;
   background: var(--primary-color);
   box-sizing: border-box;
+
   p{
     color: white;
     font-weight: 600;
   }
+
   @media (max-width: 500px) {
     padding: 32px;
     justify-content: center;

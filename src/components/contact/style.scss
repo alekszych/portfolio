@@ -30,13 +30,6 @@
       color: var(--secondary-color);
       font-size: 64px;
     }
-    @media (max-width: 500px) {
-      padding: 32px;
-    }
-  }
-  @media (max-width: 500px) {
-    gap: 32px;
-    padding: 40px 32px;
   }
   .textContainer{
     display: flex;
@@ -45,7 +38,17 @@
     align-items: flex-start;
     gap: 32px;
     width: 100%;
-    @media (max-width: 500px) {
+  }
+
+  @media (max-width: 500px) {
+    gap: 32px;
+    padding: 40px 32px;
+
+    button{
+      padding: 32px;
+    }
+
+    .textContainer{
       align-items: center;
       text-align: center;
     }

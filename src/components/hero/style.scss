@@ -2,6 +2,7 @@
   padding: 0 64px;
   background-size: cover;
   min-height: min(100vw, 100vh);
+
   @media (max-width: 500px) {
     padding: 0 32px;
   }
@@ -11,22 +12,28 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
   *>{
     max-width: 100%;
   }
+
   h1{
     color: var(--primary-color);
+
     span{
       color: var(--secondary-color);
     }
   }
+
   h4{
     color: var(--secondary-color);
     font-weight: 600;
   }
+
   img{
     height: auto;
   }
+
   div{
     display: flex;
     flex-direction: column;
