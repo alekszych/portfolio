@@ -1,10 +1,10 @@
 #hero{
-  padding: 0 64px;
+  padding: 32px 64px 0;
   background-size: cover;
   min-height: min(100vw, 100vh);
 
   @media (max-width: 500px) {
-    padding: 0 32px;
+    padding: 32px 32px 0;
   }
 }
 

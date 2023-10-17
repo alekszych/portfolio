@@ -1,7 +1,6 @@
 import React, {FC, useEffect, useState} from "react"
 import "./style.scss"
 import {useCalculateAge} from "../../hooks/useCalculateAge"
-import {Navbar} from "../navbar"
 import background from "../../images/background.jpg"
 import {generateDna} from "../nTree/helpers/generators"
 import {NTree} from "../nTree"
@@ -25,7 +24,6 @@ const Hero: FC = () => {
 	const {years, months, days, hours, minutes, seconds} = age
 	return (
 		<section id={"hero"} style={{ backgroundImage: `url(${background})` }}>
-			<Navbar/>
 			<header className={"header"}>
 				<div>
 					<h1>
