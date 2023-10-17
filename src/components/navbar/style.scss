@@ -2,7 +2,7 @@
     background: var(--primary-color);
     display: flex;
     width: 100%;
-    padding: 24px 64px;
+    padding: 16px 64px;
     justify-content: space-between;
     align-items: center;
     margin: 0;
@@ -46,7 +46,7 @@
 
     @media (max-width: 750px) {
         justify-content: center;
-        padding: 16px 32px;
+        padding: 12px 32px;
         a{
             width: fit-content;
         }
