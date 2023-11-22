@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cc46fbe4.css",
-    "main.js": "/portfolio/static/js/main.3a88e08e.js",
+    "main.js": "/portfolio/static/js/main.fd26aa23.js",
     "static/js/787.93455dee.chunk.js": "/portfolio/static/js/787.93455dee.chunk.js",
     "static/media/nTree.png": "/portfolio/static/media/nTree.8785161853fd3a485309.png",
-    "static/media/kosmetologia.png": "/portfolio/static/media/kosmetologia.382382921cf8c8661f12.png",
     "static/media/gree.png": "/portfolio/static/media/gree.9407896e99c6416261a8.png",
     "static/media/obrazy-z-mchu.png": "/portfolio/static/media/obrazy-z-mchu.8486e934a7468d900880.png",
     "static/media/fakturio.png": "/portfolio/static/media/fakturio.f7da5be2bcffaa4d920e.png",
     "static/media/Lora.ttf": "/portfolio/static/media/Lora.3a653a05dd1cd5925a30.ttf",
     "static/media/background.jpg": "/portfolio/static/media/background.0a46ff41630e77f208f5.jpg",
     "static/media/Figtree.ttf": "/portfolio/static/media/Figtree.5ecd3f8010e7190b961b.ttf",
+    "static/media/ota-logo.png": "/portfolio/static/media/ota-logo.48719ab5c1156caf8ea7.png",
     "index.html": "/portfolio/index.html",
     "main.cc46fbe4.css.map": "/portfolio/static/css/main.cc46fbe4.css.map",
-    "main.3a88e08e.js.map": "/portfolio/static/js/main.3a88e08e.js.map",
+    "main.fd26aa23.js.map": "/portfolio/static/js/main.fd26aa23.js.map",
     "787.93455dee.chunk.js.map": "/portfolio/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc46fbe4.css",
-    "static/js/main.3a88e08e.js"
+    "static/js/main.fd26aa23.js"
   ]
 }
