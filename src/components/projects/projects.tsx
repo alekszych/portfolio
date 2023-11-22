@@ -30,11 +30,11 @@ const projects = [
 		technologies: "React, three.js"
 	},
 	{
-		name: "Kosmetologia",
-		description: "Portfolio website for a beauty studio.",
-		image: "kosmetologia.png",
-		link: "https://kosmetologia.net",
-		roles: "Wordpress developer, UI Designer, Team leader",
+		name: "OTA",
+		description: "Website and branding for a local event.",
+		image: "ota-logo.png",
+		link: "https://www.ota-szczecin.pl",
+		roles: "Wordpress developer",
 		technologies: "Wordpress"
 	},
 	{
