@@ -30,14 +30,6 @@ const projects = [
 		technologies: "React, three.js"
 	},
 	{
-		name: "OTA",
-		description: "Website and branding for a local event.",
-		image: "ota-logo.png",
-		link: "https://www.ota-szczecin.pl",
-		roles: "Wordpress developer",
-		technologies: "Wordpress"
-	},
-	{
 		name: "GreeMusic",
 		description: "Personal website for a singer.",
 		image: "gree.png",
