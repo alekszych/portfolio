@@ -8,20 +8,12 @@ import {NTree} from "../nTree"
 
 const Hero: FC = () => {
 	const [dna, setDna] = useState<string>("")
-	const [age, setAge] = useState({years: 0, months: 0, days: 0, hours: 0, minutes: 0, seconds: 0})
+	const {days, months, years} = useCalculateAge("2004/10/13")
 
 	useEffect(() => {
 		setDna(generateDna())
-		setAge(useCalculateAge("2004/10/13"))
-		const interval = setInterval(() => {
-			setAge(useCalculateAge("2004/10/13"))
-		}, 1000)
-		return (() => {
-			clearInterval(interval)
-		})
 	}, [])
 
-	const {years, months, days, hours, minutes, seconds} = age
 	return (
 		<section id={"hero"} style={{ backgroundImage: `url(${background})` }}>
 			<header className={"header"}>
@@ -31,7 +23,7 @@ const Hero: FC = () => {
 						my name is Aleks!
 					</h1>
 					<h4>
-						I’m {years} years, {months} months, {days} days, {hours} hours, {minutes} minutes and {seconds} seconds old.
+						I’m {years} years, {months} months, {days} days old.
 					</h4>
 				</div>
 				{dna && <NTree
